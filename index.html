@@ -3,7 +3,7 @@
 <head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">      <!--Was ist das?-->
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
@@ -15,7 +15,7 @@
 
     <h1>Benutzerverwaltung</h1>
 
-    <table class="table table-striped userList">
+    <table class="table table-striped userList" id="Liste_User">
         <thead>
         <tr>
             <th scope="col">#</th>
@@ -25,22 +25,22 @@
         </thead>
         <tbody>
         <tr>
-            <td>1</td>
+            <td id="position">1</td>
             <td>awesomeguy01</td>
-            <td><button type="button" class="btn btn-secondary btn-danger deleteTrigger" title="Löschen"><i class="fa fa-trash"></i></button></td>
+ <!--Löchen-Button-->  <td><button type="button" class="btn btn-secondary btn-danger deleteTrigger" title="Löschen" id="Löschen"><i class="fa fa-trash"></i></button></td>
         </tr>
         </tbody>
     </table>
 
-    <form class="needs-validation" novalidate>
+    <form id="Formular" class="needs-validation" novalidate>  <!--Zeile mit Benutzername eingeben und hinzufügen Button-->
         <div class="form-row">
-            <div class="col">
+            <div class="col">   <!--Benutzername eingeben Feld-->
                 <input type="text" class="form-control" placeholder="Benutzername" id="username" required>
                 <div class="invalid-feedback">
                     Bitte geben Sie einen Benutzernamen ein!
                 </div>
             </div>
-            <div class="col">
+            <div class="col">   <!--Hinzufügen Button-->
                 <button type="submit" class="btn btn-primary addTrigger"><i class="fa fa-plus"></i> Hinzufügen</button>
             </div>
         </div>
